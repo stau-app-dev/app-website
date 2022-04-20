@@ -1,6 +1,9 @@
 <template>
   <div>
-    <LandingNavbar @scroll-to="scrollTo($event)" />
+    <div class="min-h-screen flex flex-col">
+      <LandingNavbar @scroll-to="scrollTo($event)" />
+      <LandingHero class="flex-1" />
+    </div>
   </div>
 </template>
 
