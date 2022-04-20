@@ -4,6 +4,7 @@
       <LandingNavbar class="w-full fixed top-0" @scroll-to="scrollTo($event)" />
       <LandingHero class="flex-1 pt-36" />
     </div>
+    <LandingQuote />
   </div>
 </template>
 
