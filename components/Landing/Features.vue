@@ -16,7 +16,7 @@
     >
       <div class="flex flex-col items-center">
         <img src="~/assets/img/icons/group.svg" alt="Clubs Icon" class="h-16" />
-        <h3 class="text-2xl font-bold">Clubs</h3>
+        <h3 class="text-2xl font-bold text-center">Clubs</h3>
         <p class="text-gray-600 leading-relaxed mt-2 text-center">
           Browse the latest club announcements and stay connected with your
           peers.
@@ -28,7 +28,7 @@
           alt="Cafeteria Menu Icon"
           class="h-16"
         />
-        <h3 class="text-2xl font-bold">Cafeteria Menu</h3>
+        <h3 class="text-2xl font-bold text-center">Cafeteria Menu</h3>
         <p class="text-gray-600 leading-relaxed mt-2 text-center">
           Check out the daily specials and a list of all the meals offered in
           the cafeteria.
@@ -36,7 +36,7 @@
       </div>
       <div class="flex flex-col items-center">
         <img src="~/assets/img/icons/gift.svg" alt="Gift Icon" class="h-16" />
-        <h3 class="text-2xl font-bold">Free Forever</h3>
+        <h3 class="text-2xl font-bold text-center">Free Forever</h3>
         <p class="text-gray-600 leading-relaxed mt-2 text-center">
           As always, the app is free to download and use.
         </p>
@@ -47,7 +47,7 @@
           alt="Verified Icon"
           class="h-16"
         />
-        <h3 class="text-2xl font-bold">By the Students</h3>
+        <h3 class="text-2xl font-bold text-center">By the Students</h3>
         <p class="text-gray-600 leading-relaxed mt-2 text-center">
           The St. Augustine CHS app will always be made by and for the students.
         </p>
