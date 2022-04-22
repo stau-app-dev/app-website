@@ -7,6 +7,7 @@
     <LandingQuote />
     <LandingFeatures />
     <LandingAdditionalInfo />
+    <LandingCTA />
   </div>
 </template>
 
