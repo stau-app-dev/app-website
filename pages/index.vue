@@ -5,6 +5,7 @@
       <LandingHero class="flex-1 pt-36" />
     </div>
     <LandingQuote />
+    <LandingFeatures />
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default Vue.extend({
   },
   methods: {
     scrollTo(ref: string) {
-      const el = this.$refs[ref] as HTMLElement;
+      const el = (this.$refs[ref] as Vue).$el;
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
       }
