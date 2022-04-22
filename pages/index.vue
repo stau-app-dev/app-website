@@ -5,6 +5,7 @@
       <LandingHero class="flex-1 pt-36" />
     </div>
     <LandingQuote />
+    <LandingFeatures />
   </div>
 </template>
 
