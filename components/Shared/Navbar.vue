@@ -58,7 +58,7 @@
 </template>
 <script>
 export default {
-  name: 'LandingNavbar',
+  name: 'SharedNavbar',
   data() {
     return {
       isOpen: false,
