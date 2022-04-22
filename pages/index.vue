@@ -8,6 +8,7 @@
     <LandingFeatures />
     <LandingAdditionalInfo />
     <LandingCTA />
+    <SharedFooter />
   </div>
 </template>
 
