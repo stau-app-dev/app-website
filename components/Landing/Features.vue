@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-gray-50 grid grid-cols-1 lg:grid-cols-3 lg:px-16 pt-16 pb-24 gap-16"
-  >
+  <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-16 pt-16 pb-24 gap-16">
     <div class="hidden lg:flex flex-col justify-center items-center">
       <div
         class="rounded-full bg-gradient-to-r from-red-600 to-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96"
