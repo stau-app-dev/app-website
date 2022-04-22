@@ -9,7 +9,7 @@
         class="h-8 w-8 mr-3 rounded-full"
       />
       <span class="font-semibold text-xl tracking-tight"
-        >St. Augustine CHS App</span
+        ><NuxtLink to="/">St. Augustine CHS App</NuxtLink></span
       >
     </div>
     <div class="block lg:hidden">
