@@ -10,6 +10,7 @@
     </div>
     <LandingQuote ref="quote" />
     <LandingFeatures ref="features" />
+    <LandingAdditionalInfo ref="additionalinfo" />
   </div>
 </template>
 
