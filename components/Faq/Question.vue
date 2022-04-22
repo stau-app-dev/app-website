@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex items-center justify-between bg-gray-200 pl-3 pr-2 py-3 w-full rounded text-gray-600 font-bold cursor-pointer hover:bg-gray-300 gap-2"
+      class="flex items-center justify-between bg-red-50 pl-3 pr-2 py-3 w-full rounded text-primary font-bold cursor-pointer hover:opacity-75 gap-2"
       @click="q.isOpen = !q.isOpen"
     >
       {{ q.question }}
@@ -30,7 +30,7 @@
       </span>
     </div>
     <div
-      class="p-3"
+      class="p-3 bg-gray-50"
       :class="{
         block: q.isOpen,
         hidden: !q.isOpen,

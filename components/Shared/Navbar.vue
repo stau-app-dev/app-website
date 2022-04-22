@@ -9,7 +9,7 @@
         class="h-8 w-8 mr-3 rounded-full"
       />
       <span class="font-semibold text-xl tracking-tight"
-        >St. Augustine CHS App</span
+        ><NuxtLink to="/">St. Augustine CHS App</NuxtLink></span
       >
     </div>
     <div class="block lg:hidden">
@@ -34,24 +34,24 @@
       <div class="text-base lg:flex-grow lg:text-right lg:mr-3">
         <NuxtLink
           to="/faq"
-          class="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary mr-4"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
         >
           FAQ
         </NuxtLink>
         <NuxtLink
           to="/team"
-          class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary mr-4"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
         >
           Team
         </NuxtLink>
       </div>
-      <div class="lg:ml-3">
-        <NuxtLink
-          to="/"
-          class="cursor-pointer font-semibold inline-block text-sm px-5 py-2.5 leading-none border rounded-2xl bg-primary text-white hover:opacity-75 transition-opacity duration-150 mt-4 lg:mt-0"
+      <div class="lg:ml-3 text-center">
+        <button
+          @click="downloadApp()"
+          class="text-center font-semibold inline-block text-sm px-5 py-2.5 leading-none border rounded-2xl bg-primary text-white hover:opacity-75 transition-opacity duration-150 mt-4 lg:mt-0"
         >
           Download
-        </NuxtLink>
+        </button>
       </div>
     </div>
   </nav>
@@ -63,6 +63,31 @@ export default {
     return {
       isOpen: false,
     };
+  },
+  methods: {
+    platform() {
+      // https://stackoverflow.com/a/21742107
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/windows phone/i.test(userAgent)) {
+        return 'Windows Phone';
+      }
+      if (/android/i.test(userAgent)) {
+        return 'Android';
+      }
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return 'iOS';
+      }
+      return 'unknown';
+    },
+    downloadApp() {
+      if (this.platform() === 'Android') {
+        window.open('https://play.google.com'); // TODO: replace with actual link
+      } else if (this.platform() === 'iOS') {
+        window.open('https://apps.apple.com'); // TODO: replace with actual link
+      } else {
+        this.$router.push('/');
+      }
+    },
   },
 };
 </script>
