@@ -4,7 +4,7 @@
   >
     <div class="flex items-center flex-shrink-0 text-black font-bold mr-6">
       <img
-        src="/img/logo.jpg"
+        src="~/assets/img/logo.jpg"
         alt="App Logo"
         class="h-8 w-8 mr-3 rounded-full"
       />
