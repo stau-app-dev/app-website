@@ -13,7 +13,7 @@
       <div class="flex mt-6">
         <a href="">
           <img
-            src="/img/google-play-badge.svg"
+            src="~/assets/img/google-play-badge.svg"
             alt="Google Play Badge"
             class="h-12 mr-2"
           />
@@ -21,7 +21,7 @@
 
         <a href="">
           <img
-            src="/img/apple-app-store-badge.svg"
+            src="~/assets/img/apple-app-store-badge.svg"
             alt="Apple App Store Badge"
             class="h-12 ml-2"
           />
@@ -32,7 +32,11 @@
       <div
         class="rounded-full bg-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96"
       >
-        <img src="/img/iphone-mockup.png" alt="iPhone Mockup" class="-mt-8" />
+        <img
+          src="~/assets/img/iphone-mockup.png"
+          alt="iPhone Mockup"
+          class="-mt-8"
+        />
       </div>
     </div>
   </div>
