@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   router: {
-    base: '/stau-app-website/',
+    base: process.env.GHPAGES ? '/stau-app-website/' : '/',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
