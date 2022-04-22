@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="min-h-screen flex flex-col">
-      <LandingNavbar class="w-full fixed top-0" @scroll-to="scrollTo($event)" />
-      <LandingHero class="flex-1 pt-36" />
+      <LandingNavbar
+        ref="nav"
+        class="w-full fixed top-0"
+        @scroll-to="scrollTo($event)"
+      />
+      <LandingHero ref="hero" class="flex-1 pt-36" />
     </div>
-    <LandingQuote />
-    <LandingFeatures />
+    <LandingQuote ref="quote" />
+    <LandingFeatures ref="features" />
   </div>
 </template>
 
