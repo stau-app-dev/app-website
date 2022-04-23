@@ -47,8 +47,8 @@
       </div>
       <div class="lg:ml-3 text-center">
         <button
-          @click="downloadApp()"
           class="text-center font-semibold inline-block text-sm px-5 py-2.5 leading-none border rounded-2xl bg-primary text-white hover:opacity-75 transition-opacity duration-150 mt-4 lg:mt-0"
+          @click="downloadApp()"
         >
           Download
         </button>
