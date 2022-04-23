@@ -16,12 +16,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import Question from '@/types/question';
 export default Vue.extend({
   name: 'FaqQuestions',
   props: {
     questions: {
-      type: Array,
+      type: Array as PropType<Question[]>,
       required: true,
     },
   },

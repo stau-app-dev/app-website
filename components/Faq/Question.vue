@@ -48,12 +48,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import Question from '@/types/question';
 export default Vue.extend({
   name: 'FaqQuestion',
   props: {
     question: {
-      type: Object,
+      type: Object as PropType<Question>,
       required: true,
     },
   },
