@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex items-center justify-between bg-red-50 pl-3 pr-2 py-3 w-full rounded text-primary font-bold cursor-pointer hover:opacity-75 gap-2"
+      class="select-none flex items-center justify-between bg-red-50 pl-3 pr-2 py-3 w-full rounded text-primary font-bold cursor-pointer hover:opacity-75 gap-2"
       @click="q.isOpen = !q.isOpen"
     >
       {{ q.question }}
