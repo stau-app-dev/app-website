@@ -17,12 +17,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import Team from '@/types/team';
 export default Vue.extend({
   name: 'TeamCard',
   props: {
     group: {
-      type: Object,
+      type: Object as PropType<Team>,
       required: true,
     },
   },

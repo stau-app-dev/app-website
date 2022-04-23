@@ -2,7 +2,7 @@
   <div>
     <div class="min-h-screen flex flex-col">
       <SharedNavbar class="w-full fixed top-0" />
-      <TeamGrid class="pt-36" :team="team" />
+      <TeamGrid class="pt-36" :teams="teams" />
     </div>
     <SharedFooter />
   </div>
@@ -10,12 +10,13 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import Team from '@/types/team';
 
 export default Vue.extend({
   name: 'TeamPage',
   data() {
     return {
-      team: [
+      teams: [
         {
           year: '2021-2022',
           members: [
@@ -122,15 +123,7 @@ export default Vue.extend({
             },
           ],
         },
-      ] as {
-        year: string;
-        members: {
-          name: string;
-          position: string;
-          image: string;
-          bio: string;
-        }[];
-      }[],
+      ] as Array<Team>,
     };
   },
 });

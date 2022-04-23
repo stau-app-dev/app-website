@@ -7,7 +7,7 @@
       <hr class="border-b-4 border-solid w-8/12 my-12 border-primary" />
     </div>
     <TeamCard
-      v-for="(group, index) in team"
+      v-for="(group, index) in teams"
       :key="`group-${index}`"
       :group="group"
     />
@@ -15,12 +15,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import Team from '@/types/team';
 export default Vue.extend({
   name: 'TeamGrid',
   props: {
-    team: {
-      type: Array,
+    teams: {
+      type: Array as PropType<Team[]>,
       required: true,
     },
   },
