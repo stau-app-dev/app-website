@@ -33,6 +33,12 @@
     >
       <div class="text-base lg:flex-grow lg:text-right lg:mr-3">
         <NuxtLink
+          to="/tutorials"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+        >
+          Tutorials
+        </NuxtLink>
+        <NuxtLink
           to="/faq"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
         >
@@ -43,6 +49,12 @@
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
         >
           Team
+        </NuxtLink>
+        <NuxtLink
+          to="/privacy"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+        >
+          Privacy
         </NuxtLink>
       </div>
       <div class="lg:ml-3 text-center">
