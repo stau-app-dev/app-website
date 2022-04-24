@@ -2,7 +2,7 @@
   <div>
     <div class="min-h-screen flex flex-col">
       <SharedNavbar class="w-full fixed top-0" />
-      <PrivacyText class="flex-1 pt-36" />
+      <PrivacyPolicy class="flex-1 pt-36" />
     </div>
     <SharedFooter />
   </div>
