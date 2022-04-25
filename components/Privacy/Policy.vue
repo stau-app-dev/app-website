@@ -66,7 +66,7 @@
       </h3>
       <p>
         Upon the deletion of your account, all of your Personal Data will be
-        removed from our database. To request to delete your, account you can
+        removed from our database. To request to delete your account, you can
         email sachsappteam@gmail.com.
       </p>
     </div>
