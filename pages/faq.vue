@@ -19,39 +19,36 @@ export default Vue.extend({
       questions: [
         {
           isOpen: true,
-          question: 'Lorem ipsum dolor sit amet?',
+          question: 'How do I enable general announcements?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
+            'You can enable general announcements by clicking the "Enable General Notifications" switch in the settings page.',
         },
         {
           isOpen: false,
-          question: 'Lorem ipsum dolor sit amet?',
+          question:
+            'Is there a place in the app or somewhere we can put suggestions and report bugs?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
+            'Yes! In the settings screen, which can be found in the profile page.',
         },
         {
           isOpen: false,
-          question: 'Lorem ipsum dolor sit amet?',
+          question:
+            'Will the caf menu be updated the night before or the morning of?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
+            "The caf menu will be updated on the app the morning of as this is when the cafeteria posts that day's menu",
         },
         {
           isOpen: false,
-          question: 'Lorem ipsum dolor sit amet?',
+          question:
+            'What is the difference between club announcements and general announcements?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
+            'Club announcements are for announcements that are specific to a club. General announcements are school wide announcements.',
         },
         {
           isOpen: false,
-          question: 'Lorem ipsum dolor sit amet?',
+          question: 'Can I log into my account on multiple devices?',
           answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
-        },
-        {
-          isOpen: false,
-          question: 'Lorem ipsum dolor sit amet?',
-          answer:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget. Ullamcorper sit amet risus nullam. Viverra justo nec ultrices dui sapien eget mi proin. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Morbi tincidunt ornare massa eget egestas. Nisl condimentum id venenatis a condimentum vitae. Pretium nibh ipsum consequat nisl. Cursus mattis molestie a iaculis at erat. Lectus magna fringilla urna porttitor rhoncus dolor. Posuere morbi leo urna molestie at elementum eu facilisis sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Vitae suscipit tellus mauris a diam. Consectetur adipiscing elit ut aliquam purus sit amet.\nSollicitudin tempor id eu nisl. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Vivamus arcu felis bibendum ut tristique et egestas. Etiam sit amet nisl purus in mollis. Aliquet bibendum enim facilisis gravida neque convallis a cras. Fermentum et sollicitudin ac orci phasellus. Odio aenean sed adipiscing diam donec. Bibendum ut tristique et egestas quis ipsum. Sed cras ornare arcu dui vivamus arcu felis. Porttitor lacus luctus accumsan tortor posuere ac ut.',
+            'Yes! You can log into your account on multiple devices. However, the notifications will only appear on the last signed in device.',
         },
       ] as Array<Question>,
     };
