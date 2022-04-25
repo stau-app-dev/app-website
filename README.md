@@ -11,6 +11,7 @@ $ yarn dev
 
 # build for production and launch server
 $ yarn build
+$ yarn generate
 $ yarn start
 
 # generate static project
@@ -20,11 +21,12 @@ $ yarn generate
 ## Deploy to Hosting
 
 ```bash
-# generate static project
+# build
+$ yarn build
 $ yarn generate
 
 # run deploy
-firebase deploy
+$ yarn deploy
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).

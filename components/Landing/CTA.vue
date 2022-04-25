@@ -8,7 +8,7 @@
     <div class="flex mt-6">
       <a href="">
         <img
-          src="~/assets/img/google-play-badge.svg"
+          src="~/assets/img/cta/google-play-badge.svg"
           alt="Google Play Badge"
           class="h-12 mr-2"
         />
@@ -16,7 +16,7 @@
 
       <a href="">
         <img
-          src="~/assets/img/apple-app-store-badge.svg"
+          src="~/assets/img/cta/apple-app-store-badge.svg"
           alt="Apple App Store Badge"
           class="h-12 ml-2"
         />
