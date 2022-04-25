@@ -21,7 +21,8 @@ $ yarn generate
 ## Deploy to Hosting
 
 ```bash
-# generate static project
+# build
+$ yarn build
 $ yarn generate
 
 # run deploy
