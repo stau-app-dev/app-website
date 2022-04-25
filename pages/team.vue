@@ -53,7 +53,7 @@ export default Vue.extend({
             {
               name: 'Brian Li',
               position: 'Backend Developer',
-              image: 'leo_li.jpg',
+              image: 'brian_li.jpg',
               bio: 'Brian is an aspiring programmer who wishes to expand his knowledge in the world of coding and programming. Although he has no idea what University to attend, he wishes to continue studying computer science in the future.',
             },
             {
