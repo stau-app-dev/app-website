@@ -5,7 +5,7 @@
       <div
         v-for="(member, index) in group.members"
         :key="`member-${index}`"
-        class="p-8 text-center flex flex-col justify-center gap-y-3"
+        class="p-8 text-center flex flex-col gap-y-3"
       >
         <img :src="member.image" :alt="member.name" class="rounded-lg" />
         <h4 class="text-xl font-semibold">{{ member.name }}</h4>

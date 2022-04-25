@@ -6,11 +6,13 @@
     <div class="flex justify-center">
       <hr class="border-b-4 border-solid w-8/12 my-12 border-primary" />
     </div>
-    <TeamCard
-      v-for="(group, index) in teams"
-      :key="`group-${index}`"
-      :group="group"
-    />
+    <div class="flex flex-start flex-wrap">
+      <TeamCard
+        v-for="(group, index) in teams"
+        :key="`group-${index}`"
+        :group="group"
+      />
+    </div>
   </div>
 </template>
 
