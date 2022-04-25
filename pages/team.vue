@@ -58,7 +58,7 @@ export default Vue.extend({
             },
             {
               name: 'Kenny Miu',
-              position: 'Flutter Developer',
+              position: 'Flutter Developer & Backend Developer & Web Developer',
               image: 'kenny_miu.jpg',
               bio: 'For some reason he decided to come back and help out despite having a full time job and a part time job. He is a Nanotechnology Engineering student at the University of Waterloo who just finished his fourth coop and will enter third year.',
             },
@@ -70,7 +70,7 @@ export default Vue.extend({
             },
             {
               name: 'Martin Sit',
-              position: 'Web Developer',
+              position: 'Web Developer & Flutter Developer',
               image: 'martin_sit.jpg',
               bio: 'Martin is an ambitious programmer who has a passion for creating innovative websites and applications. He wishes to attend the University of Waterloo in hopes of pursuing a career in computer science. He aims to one day build a revolutionary technology-focused business that could change the world.',
             },
@@ -82,7 +82,7 @@ export default Vue.extend({
             },
             {
               name: 'Nicholas Yeung',
-              position: 'UX/UI Designer',
+              position: 'Head UX/UI Designer',
               image: 'nicholas_yeung.jpg',
               bio: 'Nick is an avid cyclist and has a love for all things food and hockey. As an admirer of product design, and urban planning, Nick hopes to go into either of those fields. In the future Nick plans to pursue cycling competitively.',
             },
