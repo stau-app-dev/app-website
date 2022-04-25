@@ -86,7 +86,11 @@ export default {
       if (/android/i.test(userAgent)) {
         return 'Android';
       }
-      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      if (
+        (/iPad|iPhone|iPod|iPad/.test(userAgent) && !window.MSStream) ||
+        // iPad OS 13+
+        (/Macintosh/.test(userAgent) && navigator.maxTouchPoints > 1)
+      ) {
         return 'iOS';
       }
       return 'unknown';
