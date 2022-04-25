@@ -18,23 +18,23 @@ export default Vue.extend({
     return {
       teams: [
         {
-          year: '2020-2021',
+          year: '2021-2022',
           members: [
             {
               name: 'Tate Chin',
-              position: 'Android Developer',
+              position: 'Flutter Developer',
               image: 'tate_chin.jpg',
               bio: 'Tate is an aspiring mathematician who is planning to study pure math at the University of Toronto. His hobbies include making electronics, programming, and taking care of cats.',
             },
             {
               name: 'Andre Giardina',
-              position: 'Android Developer',
+              position: 'UI/UX Designer',
               image: 'andre_giardina.jpg',
               bio: 'Andre is one of the graphic designers here on the team with a passion in business and interest in the foreign exchange market. His dream is to work in luxury real estate in the Southern United States, while adding a creative touch to his career.',
             },
             {
               name: 'Tyler Guo',
-              position: 'Android Developer',
+              position: 'Flutter Developer',
               image: 'tyler_guo.jpg',
               bio: 'Tyler is a passionate computer programmer. He is aiming to study computer science or software engineering at the University of Waterloo. His hobbies include playing chess and piano.',
             },
@@ -57,10 +57,10 @@ export default Vue.extend({
               bio: 'Brian is an aspiring programmer who wishes to expand his knowledge in the world of coding and programming. Although he has no idea what University to attend, he wishes to continue studying computer science in the future.',
             },
             {
-              name: 'Sam Liu',
-              position: 'iOS Developer',
-              image: 'sam_liu.jpg',
-              bio: 'Sam is a curious and opportunistic individual who loves to explore new things. He likes math, science, and technology, and wants to pursue a university degree in one of those fields at the University of Waterloo. Sam has many other hobbies, including basketball, guitar, and chess, among others.',
+              name: 'Kenny Miu',
+              position: 'Flutter Developer',
+              image: 'kenny_miu.jpg',
+              bio: 'For some reason he decided to come back and help out despite having a full time job and a part time job. He is a Nanotechnology Engineering student at the University of Waterloo who just finished his fourth coop and will enter third year.',
             },
             {
               name: 'Rosi Qu',
