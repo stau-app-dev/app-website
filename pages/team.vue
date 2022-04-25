@@ -51,7 +51,7 @@ export default Vue.extend({
               bio: 'Leo is extremely interested in biology and robotics. He hopes to go to McMaster to focus on biomedical engineering and wishes to one day create his own app.',
             },
             {
-              name: 'Leo Li',
+              name: 'Brian Li',
               position: 'Backend Developer',
               image: 'https://via.placeholder.com/800',
               bio: 'Brian is an aspiring programmer who wishes to expand his knowledge in the world of coding and programming. Although he has no idea what University to attend, he wishes to continue studying computer science in the future.',
@@ -72,7 +72,7 @@ export default Vue.extend({
               name: 'Martin Sit',
               position: 'Web Developer',
               image: 'https://via.placeholder.com/800',
-              bio: 'Martin is an ambitious programmer who has a passion for creating innovative websites and applications. He wishes to attend the University of Toronto in hopes of pursuing a career in computer science. He aims to one day build a revolutionary technology-focused business that could change the world.',
+              bio: 'Martin is an ambitious programmer who has a passion for creating innovative websites and applications. He wishes to attend the University of Waterloo in hopes of pursuing a career in computer science. He aims to one day build a revolutionary technology-focused business that could change the world.',
             },
             {
               name: 'Louis Sun',
