@@ -25,7 +25,7 @@ $ yarn generate
 $ yarn generate
 
 # run deploy
-firebase deploy
+$ yarn deploy
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
