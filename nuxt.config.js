@@ -46,7 +46,33 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBllofITGBhdkIlSIspxhOHDXhCOomoKeE',
+          authDomain: 'staugustinechsapp.firebaseapp.com',
+          databaseURL: 'https://staugustinechsapp.firebaseio.com',
+          projectId: 'staugustinechsapp',
+          storageBucket: 'staugustinechsapp.appspot.com',
+          messagingSenderId: '448336593725',
+          appId: '1:448336593725:web:46ed94f7d7db79f524fb54',
+        },
+        services: {
+          auth: {
+            initialize: {
+              onAuthStateChangedMutation: 'onAuthStateChangedMutation',
+              onAuthStateChangedAction: 'onAuthStateChangedAction',
+            },
+          },
+          firestore: true,
+          functions: true,
+          storage: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
