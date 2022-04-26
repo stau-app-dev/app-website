@@ -58,9 +58,10 @@ export default Vue.extend({
             },
             {
               name: 'Kenny Miu',
-              position: 'Flutter Developer & Backend Developer & Web Developer',
+              position:
+                'Head Flutter Developer & Head Backend Developer & Web Developer',
               image: 'kenny_miu.jpg',
-              bio: 'For some reason he decided to come back and help out despite having a full time job and a part time job. He is a Nanotechnology Engineering student at the University of Waterloo who just finished his fourth coop and will enter third year.',
+              bio: 'For some reason, he decided to come back and help out despite having a both full-time job and a part-time job. Currently, he is a Nanotechnology Engineering student currently attending the University of Waterloo. He just finished his fourth coop at Applyboard as a Full-Stack Developer and will enter third year in May 2022.',
             },
             {
               name: 'Rosi Qu',
