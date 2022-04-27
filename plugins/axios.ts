@@ -4,7 +4,7 @@ const axios: Plugin = ({ $axios, redirect, $fire }) => {
   $axios.onRequest((config) => {
     const currentUser = $fire.auth.currentUser;
     if (!currentUser) {
-      redirect('/login');
+      redirect('/staff/login');
       return;
     }
     currentUser!.getIdToken().then((idToken) => {
