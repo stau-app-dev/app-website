@@ -50,9 +50,10 @@ export const actions: ActionTree<RootState, RootState> = {
               name: 'User',
             },
           })
-          .then((res) => res.data);
+          .then((res) => res.data.data.user);
         if (userData && userData.status >= 1) {
           commit('setUserData', userData);
+          this.$router.push('/staff/menu');
         } else {
           commit('addError', 'Must be a staff member to login');
           this.$fire.auth.signOut();
