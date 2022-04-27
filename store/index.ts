@@ -42,16 +42,15 @@ export const actions: ActionTree<RootState, RootState> = {
       commit('clearUserData');
     } else {
       try {
-        const userData = await this.$fire.firestore
-          .collection('newUsers')
-          .where('email', '==', authUser.email)
-          .get()
-          .then((snapshot) => {
-            if (snapshot.empty) {
-              return null;
-            }
-            return snapshot.docs[0].data();
-          });
+        const userData = await this.$axios
+          .get('/getUser', {
+            params: {
+              id: authUser.uid,
+              email: authUser.email,
+              name: 'User',
+            },
+          })
+          .then((res) => res.data);
         if (userData && userData.status >= 1) {
           commit('setUserData', userData);
         } else {
