@@ -58,7 +58,7 @@
         </NuxtLink>
         <NuxtLink
           v-if="$store.state.userData"
-          to="/staff/menu"
+          to="/menu"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
         >
           Cafe Menu
