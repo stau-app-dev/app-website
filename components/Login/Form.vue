@@ -2,12 +2,14 @@
   <div>
     <form class="flex flex-col space-y-4" @submit.prevent="login">
       <LoginErrors v-if="getErrors.length" :errors="getErrors" />
+      <span class="text-gray-600"> Username </span>
       <input
         v-model="username"
         class="py-4 px-3 bg-transparent rounded-xl text-gray-400 border-gray-300 shadow-sm focus:text-gray-500 focus:border-gray-700 focus:ring-0 transition-colors duration-150"
         type="text"
         placeholder="Username"
       />
+      <span class="text-gray-600"> Password </span>
       <input
         v-model="password"
         class="py-4 px-3 bg-transparent rounded-xl text-gray-400 border-gray-300 shadow-sm focus:text-gray-500 focus:border-gray-700 focus:ring-0 transition-colors duration-150"

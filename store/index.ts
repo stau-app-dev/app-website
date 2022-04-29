@@ -56,7 +56,9 @@ export const actions: ActionTree<RootState, RootState> = {
           this.$router.push('/staff/dashboard');
         } else {
           commit('addError', 'Must be a staff member to login');
-          this.$fire.auth.signOut();
+          await this.$fire.auth.signOut();
+          commit('clearUserData');
+          this.$router.push('/staff/login');
         }
       } catch (e: any) {
         commit('addError', e.message);
