@@ -53,7 +53,7 @@ export const actions: ActionTree<RootState, RootState> = {
           .then((res) => res.data.data.user);
         if (userData && userData.status >= 1) {
           commit('setUserData', userData);
-          this.$router.push('/staff/menu');
+          this.$router.push('/staff/dashboard');
         } else {
           commit('addError', 'Must be a staff member to login');
           this.$fire.auth.signOut();
@@ -62,5 +62,10 @@ export const actions: ActionTree<RootState, RootState> = {
         commit('addError', e.message);
       }
     }
+  },
+  async logout({ commit }) {
+    await this.$fire.auth.signOut();
+    commit('clearUserData');
+    this.$router.push('/staff/login');
   },
 };

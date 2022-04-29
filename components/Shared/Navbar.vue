@@ -52,24 +52,33 @@
         </NuxtLink>
         <NuxtLink
           to="/privacy"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4 pb-4"
         >
           Privacy
         </NuxtLink>
-        <NuxtLink
+        <div :class="{ block: isOpen, hidden: !isOpen }">
+          <div class="border-t border-gray-100"></div>
+          <NuxtLink
+            v-if="$store.state.userData"
+            to="/staff/menu"
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          >
+            Cafe Menu
+          </NuxtLink>
+          <NuxtLink
+            v-if="$store.state.userData"
+            to="/staff/announcement"
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          >
+            Staff Announcement
+          </NuxtLink>
+        </div>
+        <StaffDropdown
           v-if="$store.state.userData"
-          to="/staff/menu"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
-        >
-          Cafe Menu
-        </NuxtLink>
-        <NuxtLink
-          v-if="$store.state.userData"
-          to="/staff/announcement"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
-        >
-          Staff Announcement
-        </NuxtLink>
+          :user-name="$store.state.userData.name"
+          :email="$store.state.userData.email"
+          :class="{ block: !isOpen, hidden: isOpen }"
+        />
       </div>
       <div class="lg:ml-3 text-center">
         <button
