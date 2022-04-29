@@ -52,7 +52,8 @@
         </NuxtLink>
         <NuxtLink
           to="/privacy"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4 pb-4"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          :class="{ 'pb-4': isOpen }"
         >
           Privacy
         </NuxtLink>
