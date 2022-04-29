@@ -63,10 +63,10 @@ export default Vue.extend({
   },
   data() {
     return {
-      name: '',
-      price: 0,
-      pictureId: '',
-      isTodaysSpecial: 'false',
+      name: null as string | null,
+      price: null as number | null,
+      pictureId: null as string | null,
+      isTodaysSpecial: null as string | null,
     };
   },
   mounted() {

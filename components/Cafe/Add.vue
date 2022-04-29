@@ -57,9 +57,9 @@ export default Vue.extend({
   },
   data() {
     return {
-      name: null,
-      price: null,
-      pictureId: null,
+      name: null as string | null,
+      price: null as number | null,
+      pictureId: null as string | null,
     };
   },
   methods: {
