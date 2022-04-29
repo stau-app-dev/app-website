@@ -59,19 +59,23 @@
         <div :class="{ block: isOpen, hidden: !isOpen }">
           <div class="border-t border-gray-100"></div>
           <NuxtLink
-            v-if="$store.state.userData"
             to="/staff/menu"
             class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
           >
             Cafe Menu
           </NuxtLink>
           <NuxtLink
-            v-if="$store.state.userData"
             to="/staff/announcement"
             class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
           >
             Staff Announcement
           </NuxtLink>
+          <a
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+            @click="logout"
+          >
+            Logout
+          </a>
         </div>
         <StaffDropdown
           v-if="$store.state.userData"
@@ -126,6 +130,9 @@ export default {
       } else {
         this.$router.push('/');
       }
+    },
+    logout() {
+      this.$store.dispatch('logout');
     },
   },
 };
