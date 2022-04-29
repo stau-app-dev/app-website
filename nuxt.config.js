@@ -81,4 +81,9 @@ export default {
   axios: {
     baseUrl: 'https://us-central1-staugustinechsapp.cloudfunctions.net',
   },
+
+  loading: {
+    color: '#8d122f',
+    height: '6px',
+  },
 };
