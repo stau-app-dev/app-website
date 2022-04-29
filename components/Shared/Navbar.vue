@@ -63,6 +63,13 @@
         >
           Cafe Menu
         </NuxtLink>
+        <NuxtLink
+          v-if="$store.state.userData"
+          to="/staff/announcement"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+        >
+          Staff Announcement
+        </NuxtLink>
       </div>
       <div class="lg:ml-3 text-center">
         <button

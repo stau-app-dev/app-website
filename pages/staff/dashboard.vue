@@ -5,7 +5,7 @@
       <div class="pt-36">
         <div class="px-4 md:px-16 lg:px-20 py-16">
           <h1 class="font-serif text-4xl md:text-5xl font-bold text-center">
-            Staff <span class="text-primary">Landing</span>
+            Staff <span class="text-primary">Dashboard</span>
           </h1>
           <div class="flex justify-center">
             <hr class="border-b-4 border-solid w-8/12 my-12 border-primary" />
