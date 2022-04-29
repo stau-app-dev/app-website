@@ -30,7 +30,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/axios.ts', '~/plugins/persistedState.ts'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,8 +46,44 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBllofITGBhdkIlSIspxhOHDXhCOomoKeE',
+          authDomain: 'staugustinechsapp.firebaseapp.com',
+          databaseURL: 'https://staugustinechsapp.firebaseio.com',
+          projectId: 'staugustinechsapp',
+          storageBucket: 'staugustinechsapp.appspot.com',
+          messagingSenderId: '448336593725',
+          appId: '1:448336593725:web:46ed94f7d7db79f524fb54',
+        },
+        services: {
+          auth: {
+            initialize: {
+              onAuthStateChangedMutation: 'onAuthStateChangedMutation',
+              onAuthStateChangedAction: 'onAuthStateChangedAction',
+            },
+          },
+          firestore: true,
+          functions: true,
+          storage: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  axios: {
+    baseUrl: 'https://us-central1-staugustinechsapp.cloudfunctions.net',
+  },
+
+  loading: {
+    color: '#8d122f',
+    height: '6px',
+  },
 };
