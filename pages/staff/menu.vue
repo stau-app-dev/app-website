@@ -10,18 +10,19 @@
           <div class="flex justify-center">
             <hr class="border-b-4 border-solid w-8/12 my-12 border-primary" />
           </div>
-          <CafeMenu
-            class="mb-4"
-            :daily="true"
-            :items="dailyItems"
-            :picture-ids="pictureIds"
-          />
-          <CafeMenu
-            class="mt-4"
-            :daily="false"
-            :items="regularItems"
-            :picture-ids="pictureIds"
-          />
+          <div class="space-y-4">
+            <CafeMenu
+              :daily="true"
+              :items="dailyItems"
+              :picture-ids="pictureIds"
+            />
+            <CafeMenu
+              :daily="false"
+              :items="regularItems"
+              :picture-ids="pictureIds"
+            />
+            <CafeUpload />
+          </div>
         </div>
       </div>
     </div>
