@@ -2,12 +2,12 @@
   <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-16 pt-16 pb-24 gap-16">
     <div class="hidden lg:flex flex-col justify-center items-center">
       <div
-        class="rounded-full bg-gradient-to-r from-red-600 to-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96"
+        class="rounded-full bg-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex justify-center items-center"
       >
         <img
-          src="~/assets/img/iphone-mockup.png"
+          src="~/assets/img/iphone-mockup-2.png"
           alt="iPhone Mockup"
-          class="-mt-8 ml-36"
+          class="-mt-8 ml-36 transform scale-75"
         />
       </div>
     </div>
