@@ -11,7 +11,7 @@
             <hr class="border-b-4 border-solid w-8/12 my-12 border-primary" />
           </div>
           <div class="flex justify-center">
-            <LoginForm class="w-full sm:w-6/12" />
+            <FormAnnouncement class="w-full sm:w-6/12" />
           </div>
         </div>
       </div>
