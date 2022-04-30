@@ -1,7 +1,7 @@
 <template>
   <div>
     <form class="flex flex-col space-y-4" @submit.prevent="login">
-      <LoginErrors v-if="getErrors.length" :errors="getErrors" />
+      <FormErrors v-if="getErrors.length" :errors="getErrors" />
       <span class="text-gray-600"> Username </span>
       <input
         v-model="username"
@@ -30,7 +30,7 @@
 import Vue from 'vue';
 import { mapState } from 'vuex';
 export default Vue.extend({
-  name: 'LoginForm',
+  name: 'FormLogin',
 
   data() {
     return {

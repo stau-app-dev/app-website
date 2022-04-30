@@ -17,7 +17,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'LoginErrors',
+  name: 'FormErrors',
   props: {
     errors: {
       type: Array,
