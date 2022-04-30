@@ -53,16 +53,45 @@
         <NuxtLink
           to="/privacy"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          :class="{ 'pb-4': isOpen }"
         >
           Privacy
         </NuxtLink>
         <NuxtLink
-          v-if="$store.state.userData"
-          to="/staff/menu"
+          v-if="!$store.state.userData"
+          to="/staff/login"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          :class="{ 'pb-4': isOpen }"
         >
-          Cafe Menu
+          Login
         </NuxtLink>
+        <div :class="{ block: isOpen, hidden: !isOpen }">
+          <div class="border-t border-gray-100"></div>
+          <NuxtLink
+            to="/staff/menu"
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          >
+            Cafe Menu
+          </NuxtLink>
+          <NuxtLink
+            to="/staff/announcement"
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          >
+            Staff Announcement
+          </NuxtLink>
+          <a
+            class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+            @click="logout"
+          >
+            Logout
+          </a>
+        </div>
+        <StaffDropdown
+          v-if="$store.state.userData"
+          :user-name="$store.state.userData.name"
+          :email="$store.state.userData.email"
+          :class="{ block: !isOpen, hidden: isOpen }"
+        />
       </div>
       <div class="lg:ml-3 text-center">
         <button
@@ -110,6 +139,9 @@ export default {
       } else {
         this.$router.push('/');
       }
+    },
+    logout() {
+      this.$store.dispatch('logout');
     },
   },
 };

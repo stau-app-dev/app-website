@@ -2,12 +2,14 @@
   <div>
     <form class="flex flex-col space-y-4" @submit.prevent="login">
       <LoginErrors v-if="getErrors.length" :errors="getErrors" />
+      <span class="text-gray-600"> Username </span>
       <input
         v-model="username"
         class="py-4 px-3 bg-transparent rounded-xl text-gray-400 border-gray-300 shadow-sm focus:text-gray-500 focus:border-gray-700 focus:ring-0 transition-colors duration-150"
         type="text"
         placeholder="Username"
       />
+      <span class="text-gray-600"> Password </span>
       <input
         v-model="password"
         class="py-4 px-3 bg-transparent rounded-xl text-gray-400 border-gray-300 shadow-sm focus:text-gray-500 focus:border-gray-700 focus:ring-0 transition-colors duration-150"
@@ -56,14 +58,17 @@ export default Vue.extend({
           this.password
         );
       } catch (e: any) {
-        if (e.code === 'auth/user-not-found') {
-          this.$store.commit('addError', 'User not found');
-        } else if (e.code === 'auth/wrong-password') {
-          this.$store.commit('addError', 'Wrong password');
-        } else if (e.code === 'auth/invalid-email') {
-          this.$store.commit('addError', 'Invalid email');
-        } else {
-          this.$store.commit('addError', e.message);
+        switch (e.code) {
+          case 'auth/wrong-password':
+          case 'auth/invalid-email':
+          case 'auth/user-not-found':
+            this.$store.commit('addError', 'Incorrect username or password');
+            break;
+          default:
+            this.$store.commit(
+              'addError',
+              'An error occurred. Please try again later.'
+            );
         }
       }
     },
