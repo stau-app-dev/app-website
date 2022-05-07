@@ -17,6 +17,7 @@
         <img
           :src="require(`~/assets/img/tutorials/${image}`)"
           :alt="tutorial.title + ' image ' + index"
+          width="300"
           class="rounded-lg"
         />
       </div>
