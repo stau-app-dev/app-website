@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center gap-y-4 justify-center sm:justify-between flex-wrap py-6 px-2 sm:px-8 lg:px-16 shadow-md bg-white"
+    class="flex items-center gap-y-4 justify-center sm:justify-between flex-wrap py-6 px-2 sm:px-8 lg:px-16 shadow-md bg-white z-50"
   >
     <div class="flex items-center flex-shrink-0 text-black font-bold mr-6">
       <img
@@ -53,7 +53,7 @@
         <NuxtLink
           to="/privacy"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
-          :class="{ 'pb-4': isOpen }"
+          :class="{ 'pb-4': $store.state.userData }"
         >
           Privacy
         </NuxtLink>
@@ -61,11 +61,14 @@
           v-if="!$store.state.userData"
           to="/staff/login"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
-          :class="{ 'pb-4': isOpen }"
+          :class="{ 'pb-4': $store.state.userData }"
         >
           Login
         </NuxtLink>
-        <div :class="{ block: isOpen, hidden: !isOpen }">
+        <div
+          v-if="$store.state.userData"
+          :class="{ block: isOpen, hidden: !isOpen }"
+        >
           <div class="border-t border-gray-100"></div>
           <NuxtLink
             to="/staff/menu"

@@ -14,9 +14,9 @@
     </div>
     <div class="hidden md:flex flex-col justify-center items-center">
       <img
-        src="~/assets/img/placeholder.jpg"
-        alt="Placeholder Image"
-        class="rounded-full"
+        src="~/assets/img/app_icon_512.png"
+        alt="App Icon"
+        class="rounded-full border-4 border-primary"
         width="512"
       />
     </div>

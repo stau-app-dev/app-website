@@ -91,7 +91,6 @@ export default Vue.extend({
       required: true,
     },
   },
-
   data() {
     return {
       isMenuOpen: false,
@@ -102,7 +101,7 @@ export default Vue.extend({
       this.isMenuOpen = false;
     },
     logout() {
-      this.isMenuOpen = false;
+      this.closeMenu();
       this.$store.dispatch('logout');
     },
   },

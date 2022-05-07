@@ -30,12 +30,12 @@
     </div>
     <div class="flex flex-col justify-center items-center">
       <div
-        class="rounded-full bg-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96"
+        class="rounded-full bg-primary w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex justify-center items-center"
       >
         <img
           src="~/assets/img/iphone-mockup.png"
           alt="iPhone Mockup"
-          class="-mt-8"
+          class="-mt-8 transform scale-75"
         />
       </div>
     </div>
