@@ -14,7 +14,11 @@
         :key="`image-${index}`"
         class="m-4 flex justify-center"
       >
-        <img :src="image" class="rounded-lg" />
+        <img
+          :src="require(`~/assets/img/tutorials/${image}`)"
+          :alt="tutorial.title + ' image ' + index"
+          class="rounded-lg"
+        />
       </div>
     </div>
   </div>

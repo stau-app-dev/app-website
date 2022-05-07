@@ -18,15 +18,16 @@ export default Vue.extend({
     return {
       tutorials: [
         {
-          title: 'How to Write Lorem Ipsum',
+          title: 'How to opt in to general announcements',
           steps: [
-            'Anim esse minim in tempor nostrud dolore tempor sunt officia proident fugiat aliqua. Adipisicing sit sit quis exercitation aliquip velit nulla eu adipisicing laborum dolore cupidatat velit ea.',
-            'Amet commodo sit dolor sit pariatur reprehenderit Lorem et labore et occaecat ex enim. Enim sunt laboris cupidatat ipsum duis occaecat non dolore deserunt. Est enim ex non sint aliqua tempor ea laboris elit anim reprehenderit pariatur pariatur.',
-            'Voluptate elit commodo dolore quis eiusmod velit nostrud ut. Ipsum cupidatat exercitation magna sunt culpa amet in laboris enim duis minim amet magna qui. Commodo eu do esse duis ad consequat officia pariatur fugiat. Aute magna sit ullamco in commodo aliquip labore laboris non sit Lorem occaecat ad sunt. Nulla aliqua adipisicing nostrud sint minim aliquip velit occaecat irure voluptate officia ipsum eiusmod reprehenderit. Nisi pariatur sit minim et dolor veniam nisi ad occaecat cupidatat deserunt. Commodo veniam pariatur laborum ipsum. Eiusmod aute Lorem tempor culpa consequat non sunt duis amet voluptate aliquip. Nisi pariatur do quis esse labore sit elit. Veniam anim minim do aliquip esse. Ipsum ad deserunt tempor Lorem consequat ut sunt qui. In occaecat laborum commodo eu eiusmod adipisicing excepteur incididunt nisi cillum ad labore sint.',
+            'To opt into general annoucnements, please click the settings icon in the “my profile” section.',
+            'Next, please toggle the “Enable General Notifications”.',
+            'Once the notification toggle has been selected you will be brought back to the main menu and a notification banner will appear at the bottom of the screen to indicate that the change has been made.',
           ],
           images: [
-            'https://via.placeholder.com/300x600',
-            'https://via.placeholder.com/300x600',
+            'general_annc_1.png',
+            'general_annc_2.png',
+            'general_annc_3.png',
           ],
         },
         {
@@ -35,12 +36,7 @@ export default Vue.extend({
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
             'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
           ],
-          images: [
-            'https://via.placeholder.com/300x600',
-            'https://via.placeholder.com/300x600',
-            'https://via.placeholder.com/300x600',
-            'https://via.placeholder.com/300x600',
-          ],
+          images: [],
         },
         {
           title: 'Lorem Ipsum in the Real World',
