@@ -136,9 +136,13 @@ export default {
     },
     downloadApp() {
       if (this.platform() === 'Android') {
-        window.open('https://play.google.com'); // TODO: replace with actual link
+        window.open(
+          'https://play.google.com/store/apps/details?id=com.staugustinechs.app'
+        );
       } else if (this.platform() === 'iOS') {
-        window.open('https://apps.apple.com'); // TODO: replace with actual link
+        window.open(
+          'https://apps.apple.com/us/app/st-augustine-chs/id1620795445'
+        );
       } else {
         this.$router.push('/');
       }
