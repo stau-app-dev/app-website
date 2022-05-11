@@ -67,7 +67,7 @@ export default Vue.extend({
       await this.$axios.post('/addCafeMenuItem', {
         name: this.name,
         price: this.price,
-        pictureId: this.pictureId,
+        pictureId: this.pictureId || 'zac.jpg',
         isTodaysSpecial: this.isTodaysSpecial.toString(),
       });
       this.$nuxt.refresh();
