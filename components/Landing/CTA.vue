@@ -6,7 +6,10 @@
       Get the app now!
     </h3>
     <div class="flex mt-6">
-      <a href="">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.staugustinechs.app"
+        target="_blank"
+      >
         <img
           src="~/assets/img/cta/google-play-badge.svg"
           alt="Google Play Badge"
@@ -14,7 +17,10 @@
         />
       </a>
 
-      <a href="">
+      <a
+        href="https://apps.apple.com/us/app/st-augustine-chs/id1620795445"
+        target="_blank"
+      >
         <img
           src="~/assets/img/cta/apple-app-store-badge.svg"
           alt="Apple App Store Badge"
