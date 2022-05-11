@@ -2,6 +2,8 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  ssr: false,
+
   router: {
     base: process.env.GHPAGES ? '/stau-app-website/' : '/',
   },
