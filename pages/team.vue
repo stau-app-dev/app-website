@@ -94,7 +94,7 @@ export default Vue.extend({
           members: [
             {
               name: 'Kevin Basta',
-              position: 'Android Developer',
+              position: 'Backend Developer',
               image: 'kevin_basta.jpg',
               bio: 'Kevin is an aspiring software engineer and filmmaker. He is very interested in programming, videography, and classical guitar. He is actively developing his programming skills.',
             },
@@ -159,13 +159,13 @@ export default Vue.extend({
           members: [
             {
               name: 'Marcos Araujo Camacho',
-              position: 'Android Developer',
+              position: 'UI/UX Designer',
               image: 'marcos_araujo_camacho.jpg',
               bio: 'Marcos is an immigrant from Spain that moved to Canada in 2011. He has lived there with his family for nearly 8 years. He\'s had the privilege to be his elementary school "Tech Guy" and has worked with his brother on various projects including the St. A\'s App development.',
             },
             {
               name: 'Kevin Basta',
-              position: 'Android Developer',
+              position: 'Web Developer',
               image: 'kevin_basta.jpg',
               bio: 'Kevin is an aspiring software engineer and filmmaker. He is very interested in programming, videography, and classical guitar. He is actively developing his programming skills.',
             },
@@ -183,7 +183,7 @@ export default Vue.extend({
             },
             {
               name: 'Ryan Chong-Kit',
-              position: 'Web Developer',
+              position: 'Android Developer',
               image: 'ryan_chong_kit.jpg',
               bio: 'Aspiring Computer Science student in grade 12.',
             },
@@ -213,13 +213,13 @@ export default Vue.extend({
             },
             {
               name: 'Matthew Morelli',
-              position: 'Web Developer',
+              position: 'Backend Developer',
               image: 'matthew_morelli.jpg',
               bio: 'Matthew is an aspiring computer science student. He earned the Bronze Duke of Edinburgh Award in Grade 9, and his interests are in programming, and he hopes to do that in the future.',
             },
             {
               name: 'Jordon Ng',
-              position: 'Web Developer',
+              position: 'UI/UX Designer',
               image: 'jordon_ng.jpg',
               bio: 'As an avid lover of art and architecture, Jordan has dreamed of becoming an architect since he was four years old. He is currently in his senior year at St. Augustine CHS and plans on fulfilling his childhood dream after school.',
             },
