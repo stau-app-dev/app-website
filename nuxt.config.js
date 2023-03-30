@@ -24,6 +24,10 @@ export default {
           'The official St. Augustine CHS app. Encouraging student leadership, involvement, and inclusivity within our student body one app at a time.',
       },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        name: "apple-itunes-app",
+        content: "app-id=1620795445"
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
   },
