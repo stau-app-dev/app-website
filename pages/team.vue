@@ -61,7 +61,6 @@ export default Vue.extend({
               image: 'brian_li.jpg',
               bio: 'After multiple reconsiderations in his life decisions, Brian is STILL an aspiring programmer who wishes to shape the future through his innovations. Branching his interests into engineering, Brian wishes to pursue Computer or Software Engineering for his career.',
             },
-
           ],
         },
         {
