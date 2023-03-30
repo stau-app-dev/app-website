@@ -18,6 +18,52 @@ export default Vue.extend({
     return {
       teams: [
         {
+          year: '2022-2023',
+          members: [
+            {
+              name: 'Tate Chin',
+              position: 'Flutter Developer',
+              image: 'tate_chin.jpg',
+              bio: 'Tate is an aspiring mathematician who is planning to study pure math at the University of Toronto. His hobbies include making electronics, programming, and taking care of cats.',
+            },
+
+            {
+              name: 'Soheil Rajabali',
+              position: 'Backend Developer',
+              image: 'soheil_rajabali.jpg',
+              bio: 'Soheil is very interested in robotics and engineering. He takes advantage of every opportunity as a SHAD alumni and an FTC competitor. He wishes to attend a mechatronics engineering program.',
+            },
+
+            {
+              name: 'Tyler Guo',
+              position: 'Flutter Developer',
+              image: 'tyler_guo.jpg',
+              bio: 'Tyler is a passionate computer programmer. He is aiming to study computer science or software engineering at the University of Waterloo. His hobbies include playing chess and piano.',
+            },
+
+            {
+              name: 'Martin Sit',
+              position: 'Project Manager',
+              image: 'martin_sit.jpg',
+              bio: 'Martin wishes to pursue a career in the STEM fields where he can leverage his passion for technology to solve real-world problems and improve people’s lives. He aims to one day build a revolutionary technology-focused business that could change the world.',
+            },
+
+            {
+              name: 'Nicholas Yeung',
+              position: 'UX/UI Designer',
+              image: 'The_GOAT.jpg',
+              bio: 'Nick is an avid cyclist and has a love for all things food and hockey. As an admirer of product design, and urban planning, Nick hopes to go into either of those fields. In the future Nick plans to pursue cycling competitively.',
+            },
+
+            {
+              name: 'Brian Li',
+              position: 'Web Developer',
+              image: 'brian_li.jpg',
+              bio: 'After multiple reconsiderations in his life decisions, Brian is STILL an aspiring programmer who wishes to shape the future through his innovations. Branching his interests into engineering, Brian wishes to pursue Computer or Software Engineering for his career.',
+            },
+          ],
+        },
+        {
           year: '2021-2022',
           members: [
             {
@@ -73,7 +119,7 @@ export default Vue.extend({
               name: 'Martin Sit',
               position: 'Web Developer & Flutter Developer',
               image: 'martin_sit.jpg',
-              bio: 'Martin is an ambitious programmer who has a passion for creating innovative websites and applications. He wishes to attend the University of Waterloo in hopes of pursuing a career in computer science. He aims to one day build a revolutionary technology-focused business that could change the world.',
+              bio: 'Martin wishes to pursue a career in the STEM fields where he can leverage his passion for technology to solve real-world problems and improve people’s lives. He aims to one day build a revolutionary technology-focused business that could change the world.',
             },
             {
               name: 'Louis Sun',
