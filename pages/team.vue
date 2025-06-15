@@ -18,6 +18,45 @@ export default Vue.extend({
     return {
       teams: [
         {
+          year: '2024-2025',
+          members: [
+            {
+              name: 'Joel Menezes',
+              image: 'joel_menezes.jpg',
+              position: 'Full-Stack Developer',
+              bio: 'Joel is passionate about technology, Planning to study Computer Science in his future studies, which he has been interested in since the 4th grade.',
+            },
+
+            {
+              name: 'Austin Lian',
+              image: 'austin_lian.jpg',
+              position: 'Developer',
+              bio: 'Austin is passionate about building systems that integrate hardware and software to solve real-world problems. He aims to pursue electrical and computer engineering to develop technologies that make a meaningful impact.',
+            },
+
+            {
+              name: 'Ethan Selvarajah',
+              image: 'ethan_selvarajah.jpg',
+              position: 'Developer',
+              bio: 'Ethan has a passion for engineering and film, allowing his creativity to bleed into his technical projects. In the future, he hopes to pursue a career in aerospace engineering.',
+            },
+
+            {
+              name: 'Hasini Vijay Inbasri',
+              image: 'hasini_inbasri.jpg',
+              position: 'Developer',
+              bio: 'Hasini is SUPER interested in AI and robotics. She is aiming to study Computer/Mechatronics Engineering at the University of Waterloo. She dreams of working at Google in Silicon Valley :)',
+            },
+
+            {
+              name: 'Terry Xiao',
+              image: 'terry_xiao.jpg',
+              position: 'Developer',
+              bio: 'Terry plans to study Computer Science, driven by a passion for problem-solving and creating technology that helps others. He hopes to use technology to make a practical and lasting impact in the world.',
+            },
+          ],
+        },
+        {
           year: '2022-2023',
           members: [
             {
