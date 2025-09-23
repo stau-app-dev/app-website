@@ -18,6 +18,28 @@ $ yarn start
 $ yarn generate
 ```
 
+## Node version
+
+This project targets Node 16 for compatibility with Nuxt 2 and its PostCSS toolchain.
+
+If you use nvm, switch automatically using the included `.nvmrc`:
+
+```bash
+nvm install
+nvm use
+yarn install
+```
+
+If you don't use nvm, install a Node 16 release (for example 16.20.x). Using newer Node versions (like 18/20/22) may fail during install due to engine checks in PostCSS plugins (e.g., `postcss-nesting`).
+
+Optional: if you must stay on a newer Node, you can bypass engine checks while installing (not recommended for CI or production):
+
+```bash
+yarn install --ignore-engines
+```
+
+Note: ignoring engines may still result in runtime/build issues later. Prefer using Node 16.
+
 ## Deploy to Hosting
 
 ```bash

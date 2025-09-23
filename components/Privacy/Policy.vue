@@ -24,7 +24,7 @@
         What information is being stored, or accessed?
       </h3>
       <p>
-        Your name, YCDSBK12 email, and additional data (course codes) is stored
+        Your name, YCDSBK12 email, and additional data (song requests) is stored
         securely within our database. Except within this policy, your
         information is not shared with any other third parties.
       </p>
@@ -38,17 +38,13 @@
       </p>
       <ul class="list-disc list-inside">
         <li>
-          The right to refuse to provide your personal data (course codes). You
-          can choose to not display your courses to other users.
-        </li>
-        <li>
           The right to deactivate your account. You can request to delete your
-          account by contacting us at: sachsappteam@gmail.com.
+          account by contacting us at: stauchsappdev@gmail.com.
         </li>
         <li>
           The right to submit a complaint. If you have any concerns regarding
           the way your Personal Data is being stored within the app, please
-          contact us at sachsappteam@gmail. After submitting a complaint, we
+          contact us at stauchsappdev@gmail.com. After submitting a complaint, we
           will confirm the reception of your complaint within (3) business days.
           We will investigate your complaint and issue a response within (2)
           weeks.
@@ -67,7 +63,7 @@
       <p>
         Upon the deletion of your account, all of your Personal Data will be
         removed from our database. To request to delete your account, you can
-        email sachsappteam@gmail.com.
+        email stauchsappdev@gmail.com.
       </p>
     </div>
   </div>

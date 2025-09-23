@@ -32,18 +32,18 @@
       :class="{ block: isOpen, hidden: !isOpen }"
     >
       <div class="text-base lg:flex-grow lg:text-right lg:mr-3">
-        <NuxtLink
-          to="/tutorials"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+        <span
+          aria-disabled="true"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-400 lg:mr-4 cursor-not-allowed"
         >
           Tutorials
-        </NuxtLink>
-        <NuxtLink
-          to="/faq"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+        </span>
+        <span
+          aria-disabled="true"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-400 lg:mr-4 cursor-not-allowed"
         >
           FAQ
-        </NuxtLink>
+        </span>
         <NuxtLink
           to="/team"
           class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
@@ -57,14 +57,14 @@
         >
           Privacy
         </NuxtLink>
-        <NuxtLink
+        <span
           v-if="!$store.state.userData"
-          to="/staff/login"
-          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-primary lg:mr-4"
+          aria-disabled="true"
+          class="text-center block mt-4 lg:inline-block lg:mt-0 text-gray-400 lg:mr-4 cursor-not-allowed"
           :class="{ 'pb-4': $store.state.userData }"
         >
           Login
-        </NuxtLink>
+        </span>
         <div
           v-if="$store.state.userData"
           :class="{ block: isOpen, hidden: !isOpen }"
@@ -96,14 +96,7 @@
           :class="{ block: !isOpen, hidden: isOpen }"
         />
       </div>
-      <div class="lg:ml-3 text-center">
-        <button
-          class="text-center font-semibold inline-block text-sm px-5 py-2.5 leading-none border rounded-2xl bg-primary text-white hover:opacity-75 transition-opacity duration-150 mt-4 lg:mt-0"
-          @click="downloadApp()"
-        >
-          Download
-        </button>
-      </div>
+      
     </div>
   </nav>
 </template>
@@ -116,37 +109,6 @@ export default {
     };
   },
   methods: {
-    platform() {
-      // https://stackoverflow.com/a/21742107
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-      if (/windows phone/i.test(userAgent)) {
-        return 'Windows Phone';
-      }
-      if (/android/i.test(userAgent)) {
-        return 'Android';
-      }
-      if (
-        (/iPad|iPhone|iPod|iPad/.test(userAgent) && !window.MSStream) ||
-        // iPad OS 13+
-        (/Macintosh/.test(userAgent) && navigator.maxTouchPoints > 1)
-      ) {
-        return 'iOS';
-      }
-      return 'unknown';
-    },
-    downloadApp() {
-      if (this.platform() === 'Android') {
-        window.open(
-          'https://play.google.com/store/apps/details?id=com.staugustinechs.app'
-        );
-      } else if (this.platform() === 'iOS') {
-        window.open(
-          'https://apps.apple.com/us/app/st-augustine-chs/id1620795445'
-        );
-      } else {
-        this.$router.push('/');
-      }
-    },
     logout() {
       this.$store.dispatch('logout');
     },
