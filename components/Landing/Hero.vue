@@ -10,40 +10,40 @@
         Introducing the St. Augustine CHS mobile app, fully redesigned and
         reimagined, giving you the user experience you deserve.
       </p>
-      <div class="flex mt-6 items-start">
-        <div class="grid grid-cols-2 gap-4 items-start">
-          <div class="flex flex-col items-center">
-            <div aria-disabled="true">
-              <img
-                src="~/assets/img/cta/google-play-badge.svg"
-                alt="Google Play Badge"
-                class="h-12"
-              />
+      <div class="flex mt-6 items-start justify-center md:justify-start">
+        <div class="flex flex-col items-center mx-auto md:mx-0">
+          <a href="https://staugustinechs.ca" target="_blank">
+            <img
+              src="~/assets/img/cta/pwa-badge.png"
+              alt="Install the PWA"
+              class="h-12"
+            />
+          </a>
+          <p class="text-sm text-gray-600 mt-2 text-center">Access the Web App now!</p>
+
+          <div class="flex flex-col items-center mt-6">
+            <div class="flex flex-col items-center mb-4">
+              <div aria-disabled="true">
+                <img
+                  src="~/assets/img/cta/apple-app-store-badge.svg"
+                  alt="Apple App Store Badge"
+                  class="h-12 w-auto max-w-none flex-shrink-0"
+                />
+              </div>
+              <p class="text-sm text-gray-500 mt-2 text-center">iOS Coming Soon</p>
             </div>
-            <p class="text-sm text-gray-500 mt-2 text-center">Android Coming Soon</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <div aria-disabled="true">
-              <img
-                src="~/assets/img/cta/apple-app-store-badge.svg"
-                alt="Apple App Store Badge"
-                class="h-12"
-              />
+            <div class="flex flex-col items-center">
+              <div aria-disabled="true">
+                <img
+                  src="~/assets/img/cta/google-play-badge.svg"
+                  alt="Google Play Badge"
+                  class="h-12 w-auto max-w-none flex-shrink-0"
+                />
+              </div>
+              <p class="text-sm text-gray-500 mt-2 text-center">Android Coming Soon</p>
             </div>
-            <p class="text-sm text-gray-500 mt-2 text-center">iOS Coming Soon</p>
           </div>
         </div>
-        <a
-          href="https://staugustinechs.ca"
-          target="_blank"
-          class="ml-4"
-        >
-          <img
-            src="~/assets/img/cta/pwa-badge.png"
-            alt="Install the PWA"
-            class="h-12"
-          />
-        </a>
       </div>
     </div>
     <div class="flex flex-col justify-center items-center">
