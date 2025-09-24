@@ -15,26 +15,6 @@
       class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 px-8 md:px-16 lg:px-20 lg:col-span-2 gap-y-8 lg:pt-12"
     >
       <div class="flex flex-col items-center">
-        <img src="~/assets/img/icons/group.svg" alt="Clubs Icon" class="h-16" />
-        <h3 class="text-2xl font-bold text-center">Clubs</h3>
-        <p class="text-gray-600 leading-relaxed mt-2 text-center">
-          Browse the latest club announcements and stay connected with your
-          peers.
-        </p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img
-          src="~/assets/img/icons/restaurant.svg"
-          alt="Cafeteria Menu Icon"
-          class="h-16"
-        />
-        <h3 class="text-2xl font-bold text-center">Cafeteria Menu</h3>
-        <p class="text-gray-600 leading-relaxed mt-2 text-center">
-          Check out the daily specials and a list of all the meals offered in
-          the cafeteria.
-        </p>
-      </div>
-      <div class="flex flex-col items-center">
         <img src="~/assets/img/icons/gift.svg" alt="Gift Icon" class="h-16" />
         <h3 class="text-2xl font-bold text-center">Free Forever</h3>
         <p class="text-gray-600 leading-relaxed mt-2 text-center">
